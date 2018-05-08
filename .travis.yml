@@ -1,0 +1,11 @@
+language: c
+sudo: false
+
+script:
+  - make docs/build-matrix.html docs/versions.json
+  - if [ "$GH_TOKEN" != "" ]; then ./tools/travis-push.sh; fi
+  - make download -j 6 -k MXE_PLUGIN_DIRS="$(./tools/plugins-with-additional-packages.sh)"
+
+env:
+  global:
+    secure: "i8BKOLA0U/zZchCQmnTmK9yCawoWlRJKXlpSvdmSo5w+OyFbWO372CmMFxyAzSa9umC3QLhCDzd9CcpqtDsSZTKPWqCTPZ+HYKMBmFi8jIxqWOuNVn3KTGWOhpWM6az/w7lDqrJ/W30H2wnJBRJFocOiRdkrSOpuLDv0s0loFsU="
