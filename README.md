@@ -5,6 +5,8 @@
 [license-page]: LICENSE.md
 [license-badge]: http://img.shields.io/badge/License-MIT-brightgreen.svg
 
+This is the forked project from original MXE releases. This version is used for compiling Windows versions of Gift Wallet. Other releases might have problems compiling the windows wallet. This is the release we are using actively. If you are going to compile our Windows wallet, please use this MXE instead of latest MXE version.
+
 MXE (M cross environment) is a Makefile that compiles a cross
 compiler and cross compiles many free libraries such as SDL and
 Qt. Thus, it provides a nice cross compiling environment for
